@@ -79,8 +79,9 @@ a{
 }
 
 .child-box img{
-    width: 50px;
-    padding: 0 2px;
+    /* width: 50px; */
+    width: 250px;
+    /* padding: 0 2px; */
 }
 
 /* .child-box img:hover{
@@ -100,8 +101,8 @@ a{
 
 .sibling-box{
     /* background-color: rgb(255, 255, 255); */
-    padding: 20px;
-    margin:0 20px;
+    padding: 20px 0;
+    margin: 20px 0 20px 20px;
     border-radius: 20px;
 }
 
@@ -138,13 +139,12 @@ a{
     /* background-image: url(./assets/bg.jpg);
     background-position: center; */
     height: 50px!important; 
-    background-color: rgb(241, 241, 241);
 }
 
 .footer-hr{
     width: 50%;
     margin: 0 auto;
     border-radius: 5px;
-    border: 1px solid transparent;
-    height: 5px!important;
+    border: 3px solid transparent;
+    border-color: rgb(0, 0, 0);
 }
