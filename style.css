@@ -1,3 +1,26 @@
+:root{
+    /*Light Mode Colours*/
+    --background-light:rgb(241, 241, 241);
+    --text-light:rgb(25, 25, 25); 
+    --info-para-light:rgb(83, 83, 83);
+    --tile-light:rgba(255, 255, 255, 0.9);
+    --tile-border-light:rgb(225, 225, 225);
+    --shadow-light:rgb(233, 233, 233);
+    
+    /*Dark Mode Colours*/
+    --background-dark:rgb(10, 10, 10);
+    --text-dark:rgb(239,239,239);
+    --info-para-dark: rgb(161, 161, 161);
+    --tile-dark:rgb(23, 23, 23);
+    --tile-hover-dark:rgb(239, 239, 239);
+    --tile-border-dark:rgb(38, 38, 38);
+    --arrow-grey:rgb(35, 35, 35);
+    --black:rgb(25, 25, 25);
+    --hr-dark:rgb(239, 239, 239);
+    --black-oled:rgb(0,0,0);
+
+}
+
 .btn {
     border-radius: 12px !important;
 }
@@ -79,87 +102,72 @@ a {
 @media (prefers-color-scheme: light) {
 
     body {
-        background-color: rgb(241, 241, 241) !important;
+        background-color: var(--background-light) !important;
     }
 
     .para {
-        color: rgb(83, 83, 83);
+        color: var(--info-para-light);
     }
 
     .info-box {
-        box-shadow: 0px 50px 70px rgb(233, 233, 233);
+        box-shadow: 0px 50px 70px var(--shadow-light);
     }
 
     .cards {
-        background-color: rgba(255, 255, 255, 0.9);
-        color: black;
-        border: 2px solid rgb(225, 225, 225);
-    }
-
-    .cards:hover {
-        background-color: rgb(252, 252, 252);
-        color: rgb(25, 25, 25);
+        background-color: var(--tile-light);
+        color: var(--text-light);
+        border: 2px solid var(--tile-border-light);
     }
 
     .btn:hover {
-        border: 1px solid black !important;
+        border: 1px solid var(--black) !important;
     }
 
-    .arrow-left {
-        background-color: rgb(35, 35, 35) !important;
-        border: 3px solid rgb(35, 35, 35);
-    }
-
-    .arrow-right {
-        background-color: rgb(35, 35, 35) !important;
-        border: 3px solid rgb(35, 35, 35);
+    .arrow-left, .arrow-right {
+        background-color: var(--arrow-grey) !important;
+        border: 3px solid var(--arrow-grey);
     }
 
     .footer-hr {
-        border-color: rgb(0, 0, 0);
+        border-color: var(--black-oled);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(10, 10, 10) !important;
+        background-color: var(--background-dark) !important;
     }
 
     .para {
-        color: rgb(161, 161, 161);
+        color: var(--info-para-dark);
     }
 
     .cards {
-        background-color: rgb(23, 23, 23);
-        color: rgb(239, 239, 239);
-        border: 2px solid rgb(38, 38, 38);
+        background-color: var(--tile-dark);
+        color: var(--tile-hover-dark);
+        border: 2px solid var(--tile-border-dark);
     }
 
 
     .btn:hover {
-        border: 1px solid black !important;
+        border: 1px solid var(--black) !important;
     }
 
-    .arrow-left {
-        background-color: rgb(35, 35, 35) !important;
-        border: 3px solid rgb(35, 35, 35);
-    }
-
-    .arrow-right {
-        background-color: rgb(35, 35, 35) !important;
-        border: 3px solid rgb(35, 35, 35);
+    .arrow-left,.arrow-right {
+        background-color: var(--arrow-grey) !important;
+        border: 3px solid var(--arrow-grey);
     }
 
     .footer-hr {
-        border-color: rgb(239, 239, 239);
+        border-color: var(--hr-dark);
     }
 
     .info-box button {
-        border: 1px solid rgb(0, 0, 0) !important;
+        border: 1px solid var(--black-oled) !important;
     }
 
     h1 {
-        color: rgb(239, 239, 239);
+        color: var(--text-dark);
     }
 
 }
