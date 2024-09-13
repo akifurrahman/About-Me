@@ -4,7 +4,7 @@
     --text-light:rgb(25, 25, 25); 
     --info-para-light:rgb(83, 83, 83);
     --tile-light:rgba(255, 255, 255, 0.9);
-    --tile-border-light:rgb(225, 225, 225);
+    --tile-border-light:rgb(237, 237, 237);
     --shadow-light:rgb(233, 233, 233);
     --arrow-light:rgb(35, 35, 35);
     
@@ -62,7 +62,7 @@ a {
 
 .sibling-box {
     padding: 20px 0;
-    margin: 20px 0;
+    margin: 20px 0px;
     border-radius: 20px;
 }
 
