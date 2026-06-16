@@ -150,8 +150,8 @@ a {
 @media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
     body {
         background-color: var(--background-dark) !important;
-        /* background-image: url(./assets/photo-1694852860772-ec8598c72c15.jpeg); */
-        background-image: url(./assets/Gold-Gate-wallpaper.jpg);
+        background-image: url(./assets/photo-1694852860772-ec8598c72c15.jpeg);
+        /* background-image: url(./assets/Gold-Gate-wallpaper.jpg); */
         background-repeat: no-repeat;
         background-attachment: fixed;
 
